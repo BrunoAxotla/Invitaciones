@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+
+body {
+    background: linear-gradient(to bottom, #6a1a1d, #8b9399);
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: "Raleway", sans-serif;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 80%;
+    margin: 50px auto; /* Centrar el contenedor horizontalmente */
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    color: #555;
+    font-size: 28px;
+    text-align: center;
+}
+
+button {
+    background-color: #6a1a1d;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 100px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    max-width: 100%;
+}
+
+button:hover {
+    background-color: #ff0000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea la imagen a la izquierda y el texto a la derecha */
+    max-width: 100%;
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Ajusta el espacio interno del contenedor */
+    box-sizing: border-box; /* Ajusta el modelo de caja para incluir el padding en el ancho máximo */
+}
+
+.logo {
+    width: 10%;
+    height: auto;
+}
+
+.logo-text {
+    color: #333;
+    font-size: 50px;
+    text-align: center; /* Centrar el texto horizontalmente */
+    margin: 0;
+}
+
+.acompanante-section,
+.dificultad-section {
+    margin-top: 20px;
+}
+
+.acompanante-section p,
+.dificultad-section p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.acompanante-section label,
+.dificultad-section label {
+    margin-right: 20px;
+}
+
+/* Añade esta regla para aumentar el tamaño de fuente de las opciones */
+.acompanante-section input[type = "radio"],
+.dificultad-section input[type = "radio"]{
+    font-size: 24px; /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        overflow: auto;
+    }
+
+    .logo-container {
+        flex-direction: column; /* Cambia a disposición de columna en pantallas más pequeñas */
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    button {
+        font-size: 30px;
+        padding: 10px 50px;
+    }
+}
